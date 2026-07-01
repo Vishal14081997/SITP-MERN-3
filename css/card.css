@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: aqua;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 250px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+.rating {
+  color: orange;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+  background-color: gray;
+}
+
+/* Up to 480pxSmall smartphones
+481px to 768pxLarge smartphones and mini tablets
+769px to 1024pxStandard tablets in portrait layout
+1025px to 1200pxLaptops and small desktop monitors
+Above 1200pxLarge high-resolution monitors */
+
+@media (max-width: 1024px) {
+  .container{
+   flex-wrap: wrap;
+  }
+  .card{
+    background-color: black;
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+ .card{
+  background-color: white;
+ }
+
+}
+@media (max-width:480px) {
+ .card{
+  background-color: black;
+  width: 90%;
+ }
+ .content h4{
+  color: brown;
+ }
+
+}

@@ -1,0 +1,98 @@
+/* .box {
+  height: 100px;
+  width: 100px;
+  animation: colorchange 3s infinite;
+}
+
+@keyframes colorchange {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+} */
+
+/* .box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: relative;
+  animation: movebox 3s infinite;
+}
+@keyframes movebox {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+} */
+
+/* .box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: relative;
+  animation: move 3s infinite;
+}
+@keyframes move {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 100px;
+    background-color: red;
+  }
+  50% {
+    left: 200px;
+  }
+  100% {
+    left: 1100px;
+  }
+} */
+
+/* .box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  animation: rotatebox 2s infinite;
+}
+@keyframes rotatebox {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: relative;
+  animation: rectangleMove 4s infinite;
+}
+@keyframes rectangleMove {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 500px;
+    top: 0;
+  }
+  50% {
+    left: 500px;
+    top: 500px;
+  }
+  75% {
+    left: 0;
+    top: 500px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
