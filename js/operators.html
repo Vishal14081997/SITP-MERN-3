@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>operators</h1>
+
+    <script>
+
+        // 1.Arithnmetic operators : +, -, *, /, %
+        // 2.Relational operators : >, <, >=, <=, ==, !=
+        // 3.Logical operators : &&, ||, !
+        // 4.unary operators : ++, --
+
+        // let a = 30;
+        // let b = 30;
+        // console.log(a + b); // addition
+        // console.log(a - b); // subtraction
+        // console.log(a * b); // multiplication
+        // console.log(a / b); // division
+        // console.log(a % b); // modulus
+
+        // let d = a !=b;
+        // console.log(d);
+
+        // == : value check , type ignore 
+        // === : value check , type check
+
+        // let  a = 10;
+        // let  b = "10";
+        // console.log(a == b);
+        // console.log(a === b);
+
+        //logical operators
+
+        // && : and operator
+
+        //  T && T : T 
+        //  F && T : F
+        //  T && F : F
+        //  F && F : F 
+
+        // || : or operator
+
+        //  T || T : T 
+        //  F || T : T
+        //  T || F : T
+        //  F || F : F
+
+        let a = 10;
+        let b = 20;
+        console.log(a > b && a < b);   // false
+        //  F    &&   T
+        console.log(a > b || a < b);   // true
+        //  F    ||   T
+
+        let g = 10 < 5 && 5 < 8 || 6 < 8 || 8 < 10
+                //  F     &&    T  ||   T    || T
+        console.log("value for g" , g);
+        
+
+    </script>
+</body>
+
+</html>

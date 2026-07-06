@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+
+    <script>
+        let studentInfo = {
+            name: "vishal",
+            dob: '10-10-1992',
+            phone: "12345678",
+            skills: ["js", "py", "java"],
+            address: { // nested object
+                city: "jaipur",
+                state: "Rajasthan",
+                country:"india"
+            }
+        }
+        // console.log(studentInfo['dob']);
+        console.log(studentInfo.name); // dot notation
+
+        studentInfo.name = "rekha"
+
+        studentInfo.skills[1]= "react.js"
+        
+        studentInfo.address.city = "Delhi"
+
+        studentInfo.email = "visahl@gmail.com"
+        
+        studentInfo.skills.push("node.js")
+        
+        delete studentInfo.phone
+
+        console.log(studentInfo);
+
+
+
+    </script>
+
+</body>
+
+</html>
