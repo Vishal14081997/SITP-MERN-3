@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array methods</h1>
+
+    <script>
+        let product = [
+            {
+                id: 1,
+                name: "bag",
+                price: 1199,
+                sizes: ["S", "M", "L", "XL"],
+                colors: {
+                    "S": ["black", "white"],
+                    "M": ["white"],
+                    "L": ["black"],
+                    "XL": ["red"]
+                }
+            },
+            {
+                id: 2,
+                name: "Adidas",
+                price: 1689,
+                sizes: ["S", "M", "L", "XL"],
+                colors: {
+                    "S": ["black", "white"],
+                    "M": ["white"],
+                    "L": ["black"],
+                    "XL": ["red"]
+                }
+
+            },
+        ];
+        // console.log("product", product[0].sizes);
+
+        let productSize = product[0].sizes
+        console.log(productSize);
+        let userInputSizes = "M"
+        let productFound = false
+
+        for (let i = 0; i < productSize.length; i++) {
+            if (userInputSizes == productSize[i]) {
+                productFound = true
+                break;
+            }
+        }
+        console.log(productFound);
+
+
+        //-----------------------------------------
+        let values = [34, 5, 7, 32, 5, 8, 80, 78]
+        // find values less than 33 
+        let result = []
+        for (let value of values) {
+            if (value < 33) {
+                result.push(value)
+            }
+        }
+        console.log(result);
+        //.................................
+
+        let resultFilter = values.filter(value => value < 33)
+        console.log("resultfilter", resultFilter);
+
+        //.......................................
+
+        let amountArr = [50, 25, 68, 24, 77, 100];
+        let sum = 0
+        for (let item of amountArr) {
+            sum += item
+        }
+        console.log(sum);
+
+        //................... reduce.........................
+
+        let sumReduce = amountArr.reduce((acc, value) => {
+            console.log("acc", acc);
+            console.log("value", value);
+            return acc + value
+        }, 0)
+        console.log(sumReduce);
+
+        // acc - Accumulator
+        // curr - curent value
+
+        // ................. forEach ...............
+
+        let amountForEach = amountArr.forEach((value, index) => {
+            return value + value
+        });
+        console.log(amountForEach);
+        console.log(amountArr);
+
+        //................... find................
+
+    </script>
+
+</body>
+
+</html>
