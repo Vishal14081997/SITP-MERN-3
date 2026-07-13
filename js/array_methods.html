@@ -100,6 +100,186 @@
 
         //................... find................
 
+        let data = [10, 45, 34, 45, 32] // find : value>30 && value<40
+
+        let findfirst;
+        for (let value of data) {
+            if (value > 30 && value < 40) {
+                findfirst = value;
+                break;
+            }
+        }
+        console.log("findfirst", findfirst);
+
+        let result1 = data.find(value => value > 30 && value < 40)
+        console.log(result1);
+
+        //................... find last................
+
+        let findLast;
+        for (let value of data) {
+            if (value > 30 && value < 40) {
+                findLast = value;
+            }
+        }
+        console.log(findLast);
+        let resultLast = data.findLast(item => item > 30 && item < 40)
+        console.log(resultLast);
+
+        //...............................................
+
+        let arr3 = [8, 2, 6, 17, 8, 46, 24]
+        // check all value even , all even :true , fond any odd:false
+
+        let allEven = true
+        for (let value of arr3) {
+            if (value % 2 !== 0) {
+                allEven = false
+                break
+            }
+        }
+        console.log(allEven);
+
+        let evenEvery = arr3.every(num => num % 2 == 0)
+        console.log(evenEvery);
+
+        //................ FlatMap................................
+
+        let arr4 = [3, 5, 7]
+        const resultFlatMap = arr4.flatMap(num => [num, num * 3])
+        // [
+        //[1,3],
+        // [2, 6],
+        // [3, 9]
+        // ]
+        console.log(resultFlatMap);
+
+
+        let student = ['vishal', 'nikhil']
+        students = [...student, "mohit"]
+        console.log(students);
+
+        /*
+         given an arrray of nested arrays:
+          // [[1,2],[3,4],[5,6]] , use an array method to 
+          flatten it into a single array : [1,2,3,4,5,6]
+        */
+
+        //................ ternary operator ...............
+
+        let hasMember = false;
+        hasMember ? console.log("you are a member") : console.log("you are not a member");
+
+        if (hasMember) {
+            console.log("you are a member")
+        } else {
+            console.log("you are not a member")
+        }
+
+        const myName = "vishal singh"
+        const fullName = `my name is ${myName}`
+        console.log(fullName);
+
+        const companies = ["meta", 'netflix', "google", "ibm"]
+        for (let company of companies) {
+            console.log(company);
+        }
+
+        //.................. includes....................
+
+        const products = ['phone', 'tv', 'ac']
+
+        // let includesProduct = products.includes("phone")
+        // console.log(includesProduct);
+
+        let newProduct = "ac"
+        if (!products.includes(newProduct)) {
+            products.push(newProduct)
+        } else {
+            console.log("item already exist");
+        }
+        console.log(products);
+
+        //.......... slice().............
+        let arr5 = [1, 2, 3, 4, 5]
+                //  0, 1, 2, 3, 4
+        const resultSlice = arr5.slice(1, 3)
+        console.log(resultSlice);
+        console.log(arr5);
+        
+        // startIndex - includes
+        // endIndex = not includes
+        // does not change original array , return a new array 
+
+        const removed = arr5.slice(1)
+        console.log(removed);
+        
+        //............. splice..................
+
+        // change the original array 
+        // return the remove element 
+
+         const company = ["meta", 'netflix', "google", "ibm" ,"fb"]
+        // const remove = company.splice(1,3)
+        const remove = company.splice(1)
+        console.log(remove);
+        console.log(company);
+      
+        //............. indexof..........
+        const userName = ["vishal" , "rekha" ,"aman"]
+        console.log(userName.indexOf("vishal"));
+
+        console.log(userName.at(2));
+
+        // concat
+        const userName2 = ['rajesh' , "mohan"]
+        console.log(userName.concat(userName2));
+        
+        // join
+        const joinOutput = userName.join(' ')
+        console.log(joinOutput);
+
+        const reverseArray = userName.reverse()
+        console.log(reverseArray);
+        
+        // rest 
+        const companies1 = ['google' , "facbook" , "grras" , "meta", 'netflix']
+        const [firstCompany , secondCompany , ...rest] = companies1;
+        console.log(firstCompany);
+        console.log(rest);
+
+        // object - destructuring
+        const myDetails = {
+            firstName :"vishal",
+            address:{
+                city:"jaipur",
+                state:"rajasthan"
+            },
+        }
+        const {firstName , address} = myDetails
+        console.log(firstName);
+        
+        const {firstName:name, age=35} = myDetails;
+        console.log(name , age);
+        console.log(myDetails);
+        
+        const keys = Object.keys(myDetails)
+        console.log(keys);
+
+        const keyValue = Object.values(myDetails)
+        console.log(keyValue);
+        
+        
+
+
+        
+        
+
+
+        
+
+
+
     </script>
 
 </body>
