@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>string</title>
 </head>
+
 <body>
     <h1>string methods</h1>
     <script>
@@ -13,17 +15,91 @@
         console.log(str[0]);
         console.log(str.toUpperCase());
         console.log(str.charAt(1));
-        console.log(str.indexOf("m" ,6));
+        console.log(str.indexOf("m", 6));
         console.log(str.indexOf("rajesh"));
-        
+
         console.log(str.toLocaleLowerCase());
 
         let small = str.toLocaleLowerCase()
         console.log(small.includes("name"));
-        
-        
-        
-        
+
+        // slice
+        console.log(str.slice(1, 4));
+        // console.log(str.slice(4,1));
+
+        console.log(str.substring(4, 1));
+
+        // replace
+        console.log(str.replace("is", "are"));
+
+        // replaceAll
+        let str2 = "is is is"
+        console.log(str2.replaceAll("is", "are"));
+
+        //split
+        const newArr = "we are learning javascript"
+        console.log(newArr.split(" "));
+        console.log(newArr.split(" ").reverse());
+
+        // reverse string
+        let str3 = "hello"
+        let reverse = str3.split("").reverse()
+        console.log(reverse);
+
+        // padStart 
+        const padstring = "hello"
+        // *****hello
+        console.log(padstring.padStart(10, "*"));
+        console.log(padstring.padEnd(9, "*"));
+
+        const cardNumber = '4567890234567890'
+        const sliceNuber = cardNumber.slice(-4)
+        console.log(sliceNuber);
+
+        // Q create a function to mark card number (************5678);
+
+        // startsWith
+        const strString = "we are is the class"
+        console.log(strString.startsWith("we"));
+
+        // endswith
+        const url = 'https://www.google.com'
+        console.log(url.endsWith(".com"));
+
+        //search
+        console.log(url.search("p"));
+
+        //match
+        const para = "my name is vishal singh"
+
+        console.log(para.match("is"));
+
+        const checkEmail = (email) => {
+            return email.includes("@") && email.endsWith(".com")
+        }
+        console.log(checkEmail("vishalsing@gmail.com"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
+
 </html>
