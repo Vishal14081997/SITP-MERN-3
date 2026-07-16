@@ -15,7 +15,27 @@
     <p class="text">Two</p>
     <p class="text">Three</p>
 
-    <button onclick="handleClick()" >Click</button>
+    <button onclick="handleClick()">Click</button>
+    <br><br>
+    <div style="background-color: gray; padding: 20px; display: flex; flex-direction: column; gap: 10px; width: 300px; align-items: center; border-radius: 10px;">
+
+        <input style="width: 100%;" type="text" placeholder="student name" id="student_name">
+
+       <div>
+           Male <input type="radio" name="gender" value="male">
+           Female <input type="radio" name="gender" value="female">
+       </div>
+        <button
+        style="width: 100%;"
+        onclick="handleSaveClick()">save</button>
+
+        <div>
+            Entered Student Name: <div id="from_student_name">?</div> 
+        </div>
+
+
+    </div>
+
     <script src="./script.js"></script>
 </body>
 

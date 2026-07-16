@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+</head>
+<body>
+
+    <h1>Student Management System</h1>
+
+    <input type="text" id="name" placeholder="Student Name">
+
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>React</option>
+    </select>
+
+    <button onclick="saveStudent()">Save</button>
+
+    <br><br>
+
+    <input
+        type="text"
+        placeholder="Search Student"
+        id="search"
+        onkeyup="searchStudent()"
+    >
+
+    <h3>Total Students :
+        <span id="total">0</span>
+    </h3>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentList">
+
+        </tbody>
+    </table>
+
+<script src="./student.js"></script>
+
+</body>
+</html>
