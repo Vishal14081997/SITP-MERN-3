@@ -1,6 +1,8 @@
 import React from 'react'
 import Child from './components/Child'
-import Child1 from './components/Child1'
+import ProductChild from './product/ProductChild'
+import ProductCard from './product/Product'
+
 
 const App = () => {
   let data = [
@@ -76,15 +78,17 @@ const App = () => {
           data.map((item, index) => {
             return (
               <>
-                <Child1 productData={item} />
+                <ProductChild productData={item} />
               </>
             )
           })
         }
+      </div>
 
+      <div>
+        <ProductCard/>
       </div>
     </>
   )
 }
-
 export default App

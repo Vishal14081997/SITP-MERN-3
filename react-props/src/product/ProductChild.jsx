@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Child1 = ({productData}) => {
-    console.log(productData);
+const ProductChild = ({productData}) => {
+    // console.log(productData);
     
     return (
         <>
@@ -16,4 +16,4 @@ const Child1 = ({productData}) => {
     )
 }
 
-export default Child1
+export default ProductChild
