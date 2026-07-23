@@ -1,18 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaSearch } from "react-icons/fa";
+import UserContext from "../context/UserContext"
+import { useContext } from 'react';
 
 const Navbar = () => {
+    const user = useContext(UserContext);
+    console.log(user);
+    
     return (
         <>
             <nav className='flex justify-between px-10 bg-blue-700 text-white p-4 items-center'>
                 {/* logo */}
-                <div>CodingLab</div>
+                <div>CodingLab
+                <div> welcome {user.name}</div>
+                </div>
+
                 {/* menu */}
 
                 <div className='flex gap-5'>
                     <Link to={"/contact"}>
                         <div>Contact</div>
+
                     </Link>
                     <Link to={"/about"}>
                         <div>About</div>
