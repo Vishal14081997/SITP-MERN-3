@@ -92,10 +92,12 @@ const App = () => {
       <div className="bg-gray-200 w-100 p-4 rounded-3xl flex flex-col gap-5 items-center ">
         <div>
           <input
+
             type="text"
             placeholder="Enter Student Name"
             value={studentName}
             onChange={handleChange}
+            
           className="border-2 outline-none rounded-2xl p-2"
           />
         </div>
