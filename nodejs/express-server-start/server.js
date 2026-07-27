@@ -1,3 +1,4 @@
+
 const express = require("express")
 
 const server = express()
@@ -19,6 +20,13 @@ server.delete("/studentDelete" , (req,res)=>{
     console.log("studentDelete api");
     res.send("studentDelete success") 
 })
+
 server.listen(3000 ,()=>{
     console.log("server start 3000");
 })
+
+
+
+
+
+
