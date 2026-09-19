@@ -10,7 +10,6 @@ export const createStudent = async (req, res) => {
             message: "student create",
             data: user
         })
-
     } catch (error) {
         console.log("createStudent", error.message);
     }

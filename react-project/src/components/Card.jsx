@@ -1,16 +1,29 @@
-import React from 'react'
+import React from "react";
 
-const Card = ({productItem}) => {
+const Card = ({ productItem }) => {
     return (
-        <>
-            <div className='flex flex-col gap-1 text-center'>
-                <p className='text-red-500'>{productItem.id}</p>
-                <img className='w-40 rounded-2xl' src={productItem.image} alt="" />
-                <h1 className='font-bold'>{productItem.name}</h1>
-                <p>{productItem.price}</p>
-            </div>
-        </>
-    )
-}
+        <div className="w-64 bg-white p-4 rounded-xl shadow-md">
 
-export default Card
+            <img
+                src={productItem.image}
+                alt={productItem.title}
+                className="w-full h-48 object-contain"
+            />
+
+            <h2 className="font-bold mt-3 line-clamp-2">
+                {productItem.title}
+            </h2>
+
+            <p className="text-gray-500 mt-2">
+                {productItem.category}
+            </p>
+
+            <p className="text-xl font-bold mt-2">
+                ${productItem.price}
+            </p>
+
+        </div>
+    );
+};
+
+export default Card;

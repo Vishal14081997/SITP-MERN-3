@@ -15,5 +15,4 @@ const ProductChild = ({productData}) => {
         </>
     )
 }
-
 export default ProductChild
