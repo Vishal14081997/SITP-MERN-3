@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  flex: 1;
+  background-color: orange;
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+/* Tablet screen */
+@media (max-width: 768px) {
+  .card {
+    font-size: 20px;
+    background-color: lightblue;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
+/* Mobile screen */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    background-color: lightgreen;
+    font-size: 24px;
+  }
+}
+
+/* 768px ya usse badi screen */
+@media (min-width: 768px) {
+  .card {
+    background-color: purple;
+    color: white;
+  }
+}
