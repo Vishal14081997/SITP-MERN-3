@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container{
+    /* width: 500px; */
+}
+.box {
+    padding: 10px;
+    background-color: orange;
+}
+/* .box:nth-child(2) {
+  background-color: rebeccapurple;
+} */
+.box-1{
+    background-color: aqua;
+}
+.box-2{
+    background-color: black;
+    color: white;
+    /* position: relative; */
+    /* top: 100px;
+    left: 10px; */
+}
+.box-3{
+    background-color: red;
+    position: absolute; 
+    left: 100px;
+    top: 500px;
+}
+.box-4{
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+}
+.name{
+    position: fixed;
+}
+
